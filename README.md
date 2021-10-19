@@ -1,3 +1,9 @@
+# Vue转React
+## 学习路线(学习并对比区别)
+1. 父子组件传值,自定义事件
+2. react 单向数据流
+3. react 生命周期
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

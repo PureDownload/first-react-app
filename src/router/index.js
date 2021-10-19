@@ -8,8 +8,11 @@ const RouterFun = () => {
         <Router>
             {/* 使用lazy异步加载组件后，需要配合使用Suspense组件包裹。fallback可以为loading，为异步包裹的内容 */}
             <Suspense fallback={ <div></div> }>
-                <NavLink to="/home">HOME</NavLink>
-                <NavLink to="/user">User</NavLink>
+                {
+                    rootRouter.map((route,i) => 
+                    <NavLink to={route.path}>{route.name} -</NavLink>
+                    )
+                }
                 {/* 需要该组件路由才能显示 */}
                 <Switch>
                     {
