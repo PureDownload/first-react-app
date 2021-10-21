@@ -1,7 +1,5 @@
 import { lazy } from "react";
-const Home = lazy(() => import(/* webpackChunkName: "home" */"../pages/Home"))
 const HomeLayout = lazy(() => import(/* webpackChunkName: "HomeLayout" */"../layout/index"))
-const User = lazy(() => import(/* webpackChunkName: "user" */"../pages/User"))
 const Test1 = lazy(() => import(/* webpackChunkName: "Test1" */"../pages/Test1"))
 const Test2 = lazy(() => import(/* webpackChunkName: "Test2" */"../pages/Test2"))
 const SendVal = lazy(() => import(/* webpackChunkName: "SendVal" */"../pages/SendVal/index"))
@@ -10,7 +8,9 @@ const Slots = lazy(() => import(/* webpackChunkName: "Slots" */"../pages/slots/i
 const Styls = lazy(() => import(/* webpackChunkName: "style" */"../pages/style/index"))
 const Ref = lazy(() => import(/* webpackChunkName: "ref" */"../pages/ref/index"))
 const Computed = lazy(() => import(/* webpackChunkName: "computed" */"../pages/computed/index"))
-const Watch = lazy(() => import(/* webpackChunkName: "computed" */"../pages/watch/index"))
+const Watch = lazy(() => import(/* webpackChunkName: "Watch" */"../pages/watch/index"))
+const Store = lazy(() => import(/* webpackChunkName: "Store" */"../pages/store/index"))
+const Context = lazy(() => import(/* webpackChunkName: "Store" */"../pages/context/index"))
 
 export const rootRouter = [
     {
@@ -52,6 +52,16 @@ export const rootRouter = [
         component: Watch,
         path: '/watch',
         name: '监听'
+    },
+    {
+        component: Store,
+        path: '/store',
+        name: '全局存储'
+    },
+    {
+        component: Context,
+        path: '/context',
+        name: 'Context组件树存储'
     }
 ]
 
