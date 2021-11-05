@@ -11,6 +11,7 @@ const Computed = lazy(() => import(/* webpackChunkName: "computed" */"../pages/c
 const Watch = lazy(() => import(/* webpackChunkName: "Watch" */"../pages/watch/index"))
 const Store = lazy(() => import(/* webpackChunkName: "Store" */"../pages/store/index"))
 const Context = lazy(() => import(/* webpackChunkName: "Store" */"../pages/context/index"))
+const Hooks = lazy(() => import(/* webpackChunkName: "Hooks" */"../pages/hooks/index"))
 
 export const rootRouter = [
     {
@@ -62,6 +63,11 @@ export const rootRouter = [
         component: Context,
         path: '/context',
         name: 'Context组件树存储'
+    },
+    {
+        component: Hooks,
+        path: '/hooks',
+        name: 'Hooks'
     }
 ]
 
