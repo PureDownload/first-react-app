@@ -2,7 +2,7 @@ import React from "react";
 import Com from './components/Com'
 import Como from './components/Como'
 import ReactContext from '../../context/ReactContext'
-import ThinkStore from './components/ThinkStore'
+// import ThinkStore from './components/ThinkStore'
 
 const Context = () => {
     return (<div>
@@ -10,7 +10,6 @@ const Context = () => {
         <ReactContext.Provider value="重新赋值">
             <Com/><br/>
             <Como></Como>
-            <ThinkStore></ThinkStore>
         </ReactContext.Provider>
     </div>);
 }
