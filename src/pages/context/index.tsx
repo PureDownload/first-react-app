@@ -4,6 +4,7 @@ import Como from './components/Como'
 import ReactContext from '../../context/ReactContext'
 
 const Context = () => {
+    console.log('测试提交')
     return (<div>
         {/* 包裹在Provider组件内的后代组件，都可以获取到这个值 */}
         <ReactContext.Provider value="重新赋值">
